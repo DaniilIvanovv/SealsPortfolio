@@ -1,0 +1,127 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background: #0f1115;
+    color: #fff;
+    overflow-x: hidden;
+}
+header {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+}
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+header p {
+    margin-top: .5rem;
+    color: #ddd;
+}
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+}
+.card {
+    background: #1b1e24;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0,0,0,.4);
+    transition: transform .3s;
+}
+.card:hover {
+    transform: translateY(-6px);
+}
+.card img, .card video {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+.card-content {
+    padding: 1rem;
+}
+.card-content h3 {
+    margin: 0;
+    font-size: 1.3rem;
+}
+.card-content p {
+    margin-top: .5rem;
+    color: #aaa;
+    font-size: .95rem;
+}
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    color: #888;
+    border-top: 1px solid #333;
+}
+
+/* Кастомные курсоры */
+.cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    margin-left: -12.5px;
+    margin-top: -12.5px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.2);
+    pointer-events: none;
+    transform: translate3d(0,0,0);
+    transition: background .3s;
+    z-index: 9999;
+}
+.cursor-small {
+    width: 10px;
+    height: 10px;
+    margin-left: -5px;
+    margin-top: -5px;
+    background: #3fa9f5;
+}
+/* Полезные ссылки */
+.links {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: #16181d;
+    border-top: 1px solid #333;
+}
+.links h2 {
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+}
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+}
+.social-links a {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    color: white;
+    transition: 0.3s;
+}
+.social-links a.tg { background: #2aabee; }
+
+.social-links a:hover {
+    transform: scale(1.1);
+    opacity: 0.85;
+}
+/* Заголовки для разделов */
+.portfolio-section {
+    padding: 3rem 2rem;
+}
+.portfolio-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #fff;
+}
